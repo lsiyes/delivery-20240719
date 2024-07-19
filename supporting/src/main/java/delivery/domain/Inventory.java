@@ -26,7 +26,10 @@ public class Inventory {
     private String status;
 
     @PostPersist
-    public void onPostPersist() {
+    public void onPostPersist() {}
+
+    @PostUpdate
+    public void onPostUpdate() {
         InventoryDecreased inventoryDecreased = new InventoryDecreased(this);
         inventoryDecreased.publishAfterCommit();
 
