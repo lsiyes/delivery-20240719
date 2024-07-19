@@ -23,7 +23,7 @@ public class Inventory {
 
     private Integer stock;
 
-    private Integer status;
+    private String status;
 
     @PostPersist
     public void onPostPersist() {

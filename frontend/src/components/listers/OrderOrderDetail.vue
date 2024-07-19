@@ -21,7 +21,7 @@
                 <String label="Address" v-model="item.address" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <Number label="Status" v-model="item.status" :editMode="editMode" @change="change" />
+                <String label="Status" v-model="item.status" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

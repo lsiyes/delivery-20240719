@@ -129,7 +129,7 @@
                 'qty': 0,
                 'price': 0,
                 'address': '',
-                'status': 0,
+                'status': '',
             }
         },
         methods: {

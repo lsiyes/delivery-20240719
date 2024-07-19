@@ -29,7 +29,7 @@ public class Order {
 
     private String address;
 
-    private Integer status;
+    private String status;
 
     @PostPersist
     public void onPostPersist() {

@@ -27,7 +27,7 @@ public class Delivery {
 
     private String address;
 
-    private Integer status;
+    private String status;
 
     @PostPersist
     public void onPostPersist() {

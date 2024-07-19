@@ -113,7 +113,7 @@
                 'customerId': '',
                 'qty': 0,
                 'address': '',
-                'status': 0,
+                'status': '',
             }
         },
         methods:{
