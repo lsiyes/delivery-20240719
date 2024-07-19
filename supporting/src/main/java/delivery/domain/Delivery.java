@@ -52,11 +52,13 @@ public class Delivery {
     public static void startDelivery(OrderPlaced orderPlaced) {
         //implement business logic here:
 
-        /** Example 1:  new item 
         Delivery delivery = new Delivery();
+        delivery.setProductId(orderPlaced.getProductId());
+        delivery.setCustomerId(orderPlaced.getCustomerId());
+        delivery.setQty(orderPlaced.getQty());
+        delivery.setAddress(orderPlaced.getAddress());
+        delivery.setStatus("DELIVERED");
         repository().save(delivery);
-
-        */
 
         /** Example 2:  finding and process
         
@@ -82,16 +84,9 @@ public class Delivery {
 
         */
 
-        /** Example 2:  finding and process
-        
-        repository().findById(orderCanceled.get???()).ifPresent(delivery->{
-            
-            delivery // do something
-            repository().save(delivery);
-
-
+        repository().findById(orderCanceled.getId()).ifPresent(delivery->{
+            repository().delete(delivery);
          });
-        */
 
     }
     //>>> Clean Arch / Port Method
